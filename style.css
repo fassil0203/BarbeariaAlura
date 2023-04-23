@@ -1,0 +1,256 @@
+body{
+  
+   font-family: 'Montserrat', sans-serif;
+}
+
+header {
+   background: #BBBBBB;
+   padding: 20px 0;
+}
+
+.caixa {
+   position: relative;
+   width: 940px;
+   margin: 0 auto;
+}
+
+nav {
+   position: absolute;
+   /* alinhamento do Menu */
+   top: 0;
+   right: 0;
+}
+
+nav li {
+   display: inline;
+   /* Coloca o menu lado a lado  index,produt,contato */
+   margin: 0 0 0 15px;
+   /* baixo,cima,direita,esquerda */
+}
+
+nav a {
+   text-transform: uppercase;
+   /* tudo em maiusculo */
+   color: #000000;
+   /* cor do texto */
+   font-weight: bold;
+   /* negrito */
+   font-size: 22px;
+   text-decoration: none;
+
+}
+
+nav a:hover {
+   color: #C78C19;
+   text-decoration: underline;
+}
+
+.produtos {
+   width: 940px;
+   margin: 0 auto;
+   /* 0 cima baixo,auto lateral */
+   padding: 50px 0;
+}
+
+.produtos li {
+   display: inline-block;
+   text-align: center;
+   width: 30%;
+   /* largura */
+   vertical-align: top;
+   /* alinha pela linha de cima */
+   margin: 0 1.5%;
+   /*espacamento externo */
+   padding: 30px 20px;
+   box-sizing: border-box;
+   border: 2px solid #000000;
+   border-radius: 10px;
+   /* Bordas arredondadas */
+}
+
+.produtos li:hover {
+   border-color: #C78C19;
+
+}
+
+.produtos li:active {
+   border-color: #088C19;
+}
+
+.produtos li:hover h2 {
+   font-size: 34px;
+
+}
+
+.produtos h2 {
+   font-size: 30px;
+   font-weight: bold;
+}
+
+.produto-descricao {
+   font: 18px;
+}
+
+.produto-preco {
+   font-size: 22px;
+   font-weight: bold;
+   margin-top: 10px;
+}
+
+footer {
+   text-align: center;
+   background: URL("imagens/bg.jpg");
+   padding: 40px;
+}
+
+.copyright {
+   color: #FFFFFF;
+   font-size: 13px;
+   /* tamanho da fonte */
+   margin: 20px 0 0;
+}
+
+
+form {
+   margin: 40px 0;
+   /* Espaçamento entre o cinza e o preto  */
+}
+
+/* inline so ocupa o tamanho do conteudo, block ocupa total  */
+
+form label,legend {
+   display: block;
+   font-size:20px;
+   margin: 0 0 10px;
+}
+
+.input-padrao {
+   display: block;
+   margin: 0 0 20px;
+   padding:10px 25px;
+   width: 50%;
+}
+.checkbox {
+   margin:20px 0;
+
+}
+.enviar {
+   width:50%;
+   padding:15px;   /* largura do formulario */
+   background: orange;
+   color:white;
+   font-weight: bold; /* fonte negrito */
+   font-size: 15px;
+   border:none; /* removendo a borda */
+   border-radius:5px; /* arredondando a borda */
+   transition:2s all; /* todos elementos */
+   cursor:pointer; /* muda o cursor */
+}
+.enviar:hover{   /* transicao de cores */
+   background: darkorange;
+   transform: scale(1.2); /* aumenta o elemento */
+}
+table {
+   margin: 20px 0 40px ; /* espacamento de cima e baixo */
+}
+thead{
+   background: #555555;
+   color:white;
+   font-weight: bold;
+}
+
+td,th{
+   border:1px solid #000000;
+   padding:8px 15px;
+}
+
+/* css da pagina inicial */
+.banner{
+   width:100%;
+
+}
+
+.titulo-principal{
+   text-align: center;  /* alinhado ao centro */
+   font-size: 2em ;   /* em medida proporcional para pixels */
+   margin:0 0 1em;
+   clear:left; /* limpa o float a esquerda */
+}
+.titulo-principal:first-letter{ /* Primeira letra em Negrito */
+   font-weight: bold;
+}
+.titulo-principal:before{
+   content:"[";
+}
+.titulo-principal:after{
+   content:"]";
+}
+.principal{
+   padding: 3em 0;
+   background: #FEFEFE;
+   
+   
+}
+.principal p{
+   margin:0 0 1em;
+}
+.pricipal strong{
+   font-weight: bold;
+}
+.principal em{
+   font-style:italic;
+}
+.utensilios{
+   width:120px;  /* largura da imagem */
+   float:left;
+   margin:0 20px 20px 0;                 /* 0 cima 20direita 20 baixo 0 esquerda */
+}
+.mapa{
+   padding:3em 0;
+   background: linear-gradient(#FEFEFE, #888888);
+   
+}
+.mapa-conteudo{
+   width: 940px;
+   margin: 0 auto;
+
+}
+.mapa p {
+   margin:0 0 2em;
+   text-align: center;   /* centralizando o texto */
+}
+.beneficios{
+   padding:3em 0;
+   background: #888888;
+   
+}
+.conteudo-beneficios{
+   width:640px;
+   margin:auto;
+}
+
+.lista-beneficios{
+   width:40%;
+   display:inline-block;
+   vertical-align: top; /* Alinhamento pela parte de Cima */
+}
+.itens{
+   line-height: 1.5;   /* Altura da Linha */
+}
+.itens:first-child{
+   font-weight: bold;
+}
+.itens:before{
+   content:"🟊";
+}
+
+.imagem-beneficios{
+   width:60%;
+}
+
+.video{
+   width:560px;
+   margin:2em auto;
+}
+
+
